@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>State-Driven Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="app-container">
+        <h1>Task Manager</h1>
+        
+        <!-- Form for Creating tasks -->
+        <form id="todo-form">
+            <input type="text" id="todo-input" placeholder="What needs to be done?" required>
+            <button type="submit" id="add-btn">Add Task</button>
+        </form>
+
+        <!-- Advanced Filtering UI -->
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="active">Active</button>
+            <button class="filter-btn" data-filter="completed">Completed</button>
+        </div>
+
+        <!-- The container where dynamic DOM elements will be attached -->
+        <ul id="todo-list"></ul>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

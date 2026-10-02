@@ -1,0 +1,119 @@
+:root {
+    --bg-color: #f1f5f9;
+    --text-color: #1e293b;
+    --primary: #3b82f6;
+    --danger: #ef4444;
+    --success: #22c55e;
+    --card-bg: #ffffff;
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.app-container {
+    background-color: var(--card-bg);
+    width: 100%;
+    max-width: 500px;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-top: 0;
+    color: var(--primary);
+}
+
+#todo-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#todo-input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-weight: 600;
+    transition: opacity 0.2s;
+}
+
+button:hover { opacity: 0.8; }
+
+#add-btn {
+    background-color: var(--primary);
+    color: white;
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.filter-btn {
+    background-color: #e2e8f0;
+    color: var(--text-color);
+}
+
+.filter-btn.active {
+    background-color: var(--primary);
+    color: white;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+li.completed .task-text {
+    text-decoration: line-through;
+    color: #94a3b8;
+}
+
+.task-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.edit-btn {
+    background-color: #f59e0b;
+    color: white;
+    font-size: 0.8rem;
+}
+
+.delete-btn {
+    background-color: var(--danger);
+    color: white;
+    font-size: 0.8rem;
+}
